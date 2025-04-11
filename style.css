@@ -1,0 +1,812 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Inter", sans-serif;
+}
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(139, 17, 17);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10;
+}
+
+nav .logo{
+    width: 120px;
+    height: 60px;
+
+    display: flex;
+}
+
+nav .logo img{
+    width: 60px;
+    height: 100%;
+}
+
+nav .logo .name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+nav .logo .name p{
+    color: white;
+}
+
+nav .navbar{
+    width: 600px;
+    height: 100%;
+    
+}
+
+nav .navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+
+    /* margin-top: 20px; */
+}
+
+
+
+nav .navbar ul a{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color: white;  
+
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+nav .navbar ul a:hover{
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 15px 0 15px 0;
+    color: rgb(139, 17, 17);
+}
+
+nav .navbar ul a li{
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+/* nav end */
+
+/* home start */
+
+#home{
+    width: 100%;
+    height: 550px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#home .text1{
+    width: 500px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#home .text1 span{
+    color: #8B1111;
+}
+
+#home .text1 p{
+    font-size: 4rem;
+    color: white;
+}
+
+#home .text1 button{
+    padding: 10px 20px;
+    background-color: #8B1111;
+    border: none;
+    color: white;
+    border-radius: 10px 0 10px 0;
+}
+
+#home .text1 button:hover{
+    background-color: white;
+    color: #8B1111;
+    cursor: pointer;
+}
+
+#home .space{
+    width: 400px;
+}
+
+/* home end */
+
+/* menu start */
+#menu{
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* margin-bottom: 30px; */
+    /* margin-top: 70px; */
+}
+
+#menu .text2{
+    width: 450px;
+    height: 200px;
+}
+
+#menu .text2 p{
+    color: #8B1111;
+    font-size: 2.4rem;
+    text-align: center;
+    text-shadow: -2px 3px 2px rgb(250, 246, 246);
+ 
+}
+
+#menu .text2 ul{
+    width: 450px;
+    height: 60px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menu .text2 ul li{
+    list-style: none;
+    color: white;
+}
+
+#menu .text2 ul li a{
+    text-decoration: none;
+    color: white;
+
+    background-color: #8B1111;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+#menu .text2 ul li a:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #8B1111;
+}
+
+#menu .card, .cardd{
+    width: 100%;
+    height: 220px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#menu .card #prev1,#next1{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+}
+
+#menu .card #donut, 
+#menu .card #sandwich, 
+#menu .card #drink{
+    display: none;
+}
+
+#menu .card .card1{
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menu .card .card1 .cards{
+    width: 250px;
+    height: 300px;
+    background: linear-gradient(rgb(116, 21, 21), black);
+    border-radius: 15px 0 15px 0;
+    box-shadow: 2px 2px 3px 0px rgba(255,255,255,1);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#menu .card .card1 .cards .cardsDiv {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+#menu .card .card1 .cards .cardsDiv h1{
+    color: burlywood;
+}
+#menu .card .card1 .cards .cardsDiv1 h1{
+    color: burlywood;
+}
+#menu .card .card1 .cards .cardsDiv img{
+    width: 180px;
+    height: 180px;
+    margin-bottom: 10px;
+}
+
+#menu .card .card1 .cards .cardsDiv1{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menu .card .card1 .cards .cardsDiv1 button{
+    padding: 10px 15px;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 10px 0 10px 0;
+}
+
+#menu .card .card1 .cards .cardsDiv1 button:hover{
+    cursor: pointer;
+    color: yellow;
+}
+
+/* customize */
+
+#customize {
+    width: 100%;
+    height: 550px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#customize img{
+    position: relative;
+}
+
+#customize .customize h1{
+    font-size: 1.8rem;
+    color: burlywood;
+    text-align: center;
+}
+
+#customize .customize p{
+    color: white;
+    text-align: center;
+}
+
+#customize button{
+    padding: 15px 25px;
+    border: none;
+    background-color: #8B1111;
+    color: white;
+    border-radius: 15px 0 15px 0;
+    position: absolute;
+    margin-top: 20%;
+}
+
+#customize button:hover{
+    background-color: white;
+    color: #8B1111;
+    cursor: pointer;
+}
+
+/* service section */
+#service{
+    width: 100%;
+    height: 700px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#service h1{
+    width: 100%;
+    font-size: 2.5rem;
+    color: burlywood;
+    text-align: center;
+}
+
+#service .paragraph{
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#service .paragraph .one{
+    width: 60%;
+    height: 350px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+}
+
+#service .paragraph .one p{
+    width: 100%;
+    color: burlywood;
+    font-size: 1.3rem;
+}
+
+#service .paragraph .two{
+    width: 15%;
+    height: 200px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    
+    margin-bottom: 80px;
+}
+
+#service .paragraph .two img{
+    width: 250px;
+    height: 250px;
+    align-items: center;
+}
+
+#service .paragraph .two button{
+    padding: 10px 15px;
+    border: 3px solid #8B1111;
+    background-color: transparent;
+    color: white;
+    border-radius: 15px 0 15px 0;
+    margin-top: 10px;
+}
+
+#service .paragraph .two button:hover{
+    cursor: pointer;
+    border: 3px solid white;
+    color: #8B1111;
+}
+
+#service .deliver{
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#service .deliver ul{
+    width: 250px;
+    height: 200px;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#service .deliver ul li{
+    list-style: none;
+    color: burlywood;
+}
+
+#service .deliver ul li i{
+    color: #8B1111;
+    margin-right: 10px;
+}
+
+#service .deliver img{
+    width: 250px;
+    height: 250px;
+}
+
+#service .deliver div{
+    width: 300px;
+    height: 200px;
+    
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#service .deliver div p{
+    color: white;
+    text-align: center;
+
+}
+
+#service .deliver div button{
+    padding: 10px 15px;
+    background-color: #8B1111;
+    color: white;
+    border: none;
+    border-radius: 20px 0 20px 0;
+}
+
+#service .deliver div button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #8B1111;
+}
+
+#contact{
+    width: 100%;
+    height: 300px;
+    background-color: #8B1111;
+}
+
+#contact .address{
+    width: 100%;
+    height: 260px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#contact .address .emailAddress{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    .table2, .table3{
+        display: none;
+    }
+}
+#contact .address .emailAddress h1{
+    color: white;
+}
+
+#contact .address .emailAddress table{
+    color: #fff;
+}
+
+#contact .address .emailAddress tr td i{
+    margin-right: 10px;
+}
+
+#contact .address .emailAddress tr td:hover{
+    cursor: pointer;
+    color: yellow;
+}
+
+#contact .address .PicBtn{
+    width: 25%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact .address .PicBtn img{
+    width: 310px;
+    height: 100px;
+    margin-top: 15px;
+
+    border-radius: 50px;
+}
+
+#contact .address .PicBtn .one{
+    width: 300px;
+    height: 70px;
+}
+
+#contact .address .PicBtn .one h2,p{
+    color: white;
+}
+
+#contact .address .PicBtn .two input{
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 15px 0 0 0;
+    background-color: white;
+    color: #8B1111;
+}
+
+#contact .address .PicBtn .two button{
+    padding: 9px 15px;
+    border-radius: 15px 0 0 0;
+    background-color: #8B1111;
+    color: white;
+    border: 2px solid white;
+}
+
+#contact .address .PicBtn .two button:hover{
+    cursor: pointer;
+    color: #000;
+}
+
+#contact .copyRight{
+    width: 100%;
+    height: 40px;
+    background-color: #732e2e;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+@media (max-width : 768px){
+
+    nav {
+        width: 100%;
+    }
+
+    nav .logo{
+        width: 30px;
+        height: 30px;
+    }
+    nav .navbar{
+        width: 400px;
+    }   
+    
+    nav .navbar ul a li{
+        display: none;
+    }
+
+
+    #home .text1{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #home .space{
+        display: none;
+    } 
+
+    /* #menu .card button{
+        display: none;
+    } */
+
+    #menu .card .card1 .cards{
+        width: 200px;
+    }
+
+    #menu .card .card1 .cards .cardsDiv img{
+        width: 150px;
+        height: 150px;
+    }
+
+    #menu .card .card1 .cards .cardsDiv h1, .cardsDiv1 h1{
+        font-size: 1.2rem;
+    }
+
+    /* #menu .card .card1 .cards .cardsDiv1 button{
+        padding: 5px;
+    } */
+
+    #service{
+        .none{
+            display: none;
+        }
+
+        .paragraph{
+            margin-right: 30px;
+        }
+
+        .deliver .none{
+            display: none;
+        }
+    }
+
+    #contact .address .PicBtn .two{
+        input{
+            width: 100px;
+        }
+
+        button{
+            padding: 5px;
+        }
+    }
+}
+
+@media (max-width: 430px){
+    nav {
+        width: 100%;
+
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    nav .logo{
+        width: 40px;
+        height: 40px;
+    }
+
+    nav .logo img{
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+    }
+
+    nav .logo .name{
+        display: none;
+    }
+
+    nav .navbar {
+        width: 370px;
+        margin-right: 20px;
+    }   
+    
+    #menu {
+        .text2{
+            width: 100%;
+        }
+
+        .text2 ul{
+            width: 100%;
+        }
+
+        .text2 ul li a{
+            padding: 5px 10px;
+        }
+
+        .card1 #none{
+            display: none;
+        }
+
+        .card .card1 .cards{
+            width: 150px;
+        }
+
+        .card .card1 .cards .cardsDiv img{
+            width: 100px;
+            height: 100px;
+        }
+
+        .card .card1 .cards .cardsDiv1{
+            flex-direction: column;
+        }
+
+        .card .card1 .cards .cardsDiv1 button{
+            padding: 5px;
+        }
+     
+    }
+
+    #service {
+        height: 1300px;
+
+        .paragraph{
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-bottom: 30px;
+
+            .one #none, .none{
+                display: none;
+            }
+
+            .one p{
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .two{
+                width: 100%;
+                /* display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: row; */
+
+                img{
+                    width: 180px;
+                    height: 180px;
+                }
+
+                button{
+                    padding: 5px;
+                }
+            }
+        }
+
+        .deliver{
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+
+    #contact{
+        width: 100%;
+        height: 550px;
+        flex-direction: column;
+
+        .address .emailAddress .table1{
+            display: none;
+        }
+
+        .address{
+            flex-direction: column;
+            height: 450px;
+
+        }
+
+        .address .emailAddress .table2,
+        .address .emailAddress .table3{
+            display: block;
+        }
+
+        .address .PicBtn{
+            height: 200px;
+            flex-direction: column;
+
+            img{
+                display: none;
+            }
+        }
+
+        .address{
+            .PicBtn .two{
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-right: 70px;
+
+                input{
+                    width: 100px;
+                    margin-right: 10px;
+                }
+
+            
+            }
+
+
+        }
+
+        .copyRight{
+            height: 100px;
+            flex-direction: column;
+
+            small{
+                opacity: 0.6;
+            }
+        }
+    }
+
+}
+
+
