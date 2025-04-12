@@ -671,7 +671,7 @@ nav .navbar ul a li{
 
     nav .navbar {
         width: 370px;
-        margin-right: 20px;
+        /* margin-right: 10px; */
     }   
     
     #menu {
