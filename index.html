@@ -347,36 +347,40 @@
         document.querySelector(".li-four").onclick = drink;
         
 
-        function pizza(){
+        function pizza(event){
             document.querySelector("#pizza").style.display = "block";
             document.querySelector("#pizza").style.display = "flex";
             document.querySelector("#donut").style.display = "none";
             document.querySelector("#sandwich").style.display = "none";
             document.querySelector("#drink").style.display = "none";
+            event.preventDefault();
         }
 
-        function donut(){
+        function donut(event){
             document.querySelector("#donut").style.display = "block";
             document.querySelector("#donut").style.display = "flex";
             document.querySelector("#pizza").style.display = "none";
             document.querySelector("#sandwich").style.display = "none";
             document.querySelector("#drink").style.display = "none";
+            event.preventDefault();
         }
 
-        function sandwich(){
+        function sandwich(event){
             document.querySelector("#sandwich").style.display = "block";
             document.querySelector("#sandwich").style.display = "flex";
             document.querySelector("#pizza").style.display = "none";
             document.querySelector("#donut").style.display = "none";
             document.querySelector("#drink").style.display = "none";
+            event.preventDefault();
         }
 
-        function drink(){
+        function drink(event){
             document.querySelector("#drink").style.display = "block";
             document.querySelector("#drink").style.display = "flex";
             document.querySelector("#pizza").style.display = "none";
             document.querySelector("#sandwich").style.display = "none";
             document.querySelector("#donut").style.display = "none";
+            event.preventDefault();
         }
 
     </script>
